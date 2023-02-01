@@ -5,7 +5,7 @@ interface ButtonProps {
   onClick?: () => void
   width: string
   type?: React.ButtonHTMLAttributes<HTMLButtonElement>["type"]
-  disabled: boolean
+  disabled?: boolean
 }
 export const Button: React.FC<ButtonProps> = ({value, onClick, width, type, disabled }) => {
   return <button 

@@ -16,7 +16,7 @@ const Form = () => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmitHandler = (data) => {
+  const onSubmitHandler = (data: any) => {
     console.log({ data });
     reset();
   }
