@@ -1,0 +1,26 @@
+.gallery {
+    margin-bottom: 180px;
+
+    &__wrapper {
+        display: flex;
+        gap: 24px;
+    }
+    &__wrapper2 {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+    }
+
+    & img {
+        border-radius: 16px;
+    }
+    
+    &__text1 {
+    margin-top: 46px;
+    margin-bottom: 84px;
+    }
+    &__text2 {
+        margin-top: 139px;
+        max-width: 868px;
+        }
+}

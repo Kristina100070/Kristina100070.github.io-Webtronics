@@ -1,0 +1,56 @@
+@import '../../styles/constants.scss';
+.steps {
+    margin-top: 56px;
+    position: relative;
+    margin-bottom: 180px;
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 222px;
+        grid-row-gap: 144px;
+    }
+    
+}
+.vertical {
+    height: 777px;
+    width: 4px;
+    background: $linearColor;
+    position: absolute;
+    right: 50%;
+    top: 100px;
+    &__dot {
+        width: 24px;
+        height: 24px;
+        background: #3B48D0;
+        border-radius: 50%;
+        position: absolute;
+        left: -10px;
+        top: -10px;
+
+&:nth-child(2n) {
+    transform: scale(-1, 1);
+    top: 100px;
+}
+&:nth-child(3) {
+    top: 324px;
+}
+&:nth-child(4) {
+    top: 448px;
+}
+&:nth-child(5) {
+    top: 648px;
+}
+&:nth-child(6) {
+    top: 777px;
+}
+& img {
+    right: 20px;
+    top: 10px;
+    position: absolute;
+    width: 82px;
+    height: 6px;
+}
+    }
+    
+
+}

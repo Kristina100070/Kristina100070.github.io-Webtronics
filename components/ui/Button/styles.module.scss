@@ -1,0 +1,11 @@
+@import 'styles/constants.scss';
+.button {
+    height: 82px;
+    border-radius: 8px;
+    border: none;
+    background: $linearColor;
+    padding: 0;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+}

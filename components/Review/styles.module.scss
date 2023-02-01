@@ -1,0 +1,49 @@
+@import '../../styles/constants.scss';
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 180px;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    }
+    &__card {
+        display: flex;
+        gap: 24px;
+       
+    }
+    &__text {
+        margin-top: 100px;
+        width: 392px;
+    }
+    &__settings {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 16px;
+        margin-top: 48px;
+    }
+}
+.settings__buttons {
+    display: flex;
+    gap: 24px;
+}
+.settings__result {
+    margin-right: 57%;
+    display: flex;
+    & span {
+        color: $cleanColor;
+        font-family: 'ClashDisplay-Regular';
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        font-size: 24px;
+    }
+    & span:last-of-type {
+        font-size: 16px;
+       margin-left: 4px;
+    }
+}

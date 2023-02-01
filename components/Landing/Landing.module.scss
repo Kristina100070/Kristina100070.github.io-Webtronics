@@ -1,0 +1,15 @@
+@import '../../styles/constants.scss';
+.wrapper_bg {
+    width: 100%;
+    background-color: $backgroundColor;
+    background-image: url('../../public/images/bg.png');
+    background-repeat: no-repeat;
+    
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+}

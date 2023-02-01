@@ -1,0 +1,65 @@
+@import '../../../styles/constants.scss';
+.step {
+    width: 472px;
+    height: 189px;
+    background: $backgroundColor;
+    border-radius: 8px;
+    position: relative;
+    
+    &_blur {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        backdrop-filter: blur(5px);
+        background: rgba(255, 255, 255, 0.05);
+        height: inherit;
+        border-radius: 8px;
+        padding: 24px;
+    }
+    &_bg {
+        width: 475px;
+        height: 191px;
+        background: $primaryGragientColor;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+    &_mr {
+        margin-top: 124px;
+    }
+    &_mr2 {
+        margin-top: -124px;
+    }
+    &_mr2 {
+        margin-top: -124px;
+    }
+    &_border {
+        width: 146px;
+        height: 228px;
+        background: $linear3Color;
+        border-radius: 8px; 
+        position: absolute;
+        z-index: -1;
+        top: -20px;
+        &_right {
+            right: -20px;
+            
+        }
+        &_left {
+            left: -20px;
+            transform: scale(-1, 1);
+            
+        }
+        &_bg {
+            background: $backgroundColor;
+            border-radius: 8px; 
+            width: 138px;
+            height: 220px;
+            position: absolute;
+            top: 4px;
+            right: 4px;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.header__link {
+    margin-right: 48px;
+    cursor: pointer;
+}
+.header__link:last-of-type {
+    margin-right: 0;
+}
+.header__link:hover {
+    transform: scale(1.1);
+}

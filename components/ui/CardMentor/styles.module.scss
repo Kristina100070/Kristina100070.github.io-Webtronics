@@ -1,0 +1,30 @@
+@import '../../../styles/constants.scss';
+.mentor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+        &:nth-child(2) {
+            margin-top: -50px;
+        }
+        &_bg {
+            border-radius: 50%;
+            width: 188px;
+            height: 188px;
+            background: $primaryGragientColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+
+            & img {
+            border-radius: 50%;
+            width: 186px;
+            height: 186px;
+        }
+    }
+    & p {
+        font-size: 14px;
+        margin-top: 4px;
+    }
+}

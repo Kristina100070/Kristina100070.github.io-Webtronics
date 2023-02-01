@@ -1,0 +1,22 @@
+.tech  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 164px;
+    & h2 {
+        max-width: 534px;
+        margin-bottom: 16px;
+    }
+    & p {
+        max-width: 432px;
+        margin-bottom: 54px;
+        text-align: center;
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 181px);
+        gap: 25px ;
+        width: 100%;
+        justify-content: center;
+    }
+}

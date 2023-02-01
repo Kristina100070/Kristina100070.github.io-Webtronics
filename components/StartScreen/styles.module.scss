@@ -1,0 +1,20 @@
+.startScreen {
+margin-top: 85px;
+margin-bottom: 189px;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__subtitle {
+        max-width: 359px;
+        margin-left: 57px;
+    }
+    &__title {
+        margin-left: 24px;
+    }
+    &__mark {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+}

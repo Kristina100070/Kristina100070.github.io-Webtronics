@@ -1,0 +1,68 @@
+@import '../../../styles/constants.scss';
+
+$width: 493px; 
+$height: 70px;
+.input {
+    border: none;
+    position: relative;
+    width: $width;
+    height: $height;
+    background: $primaryGragientColor;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 24px;
+    &_bg {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: calc($width - 2px);
+        height: calc($height - 2px);
+        border-radius: 8px;
+        backdrop-filter: blur(5px);
+        background: $backgroundColor;   
+    }
+    &_blur {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        width: calc($width - 2px);
+        height: calc($height - 2px);
+        border-radius: 8px;
+        backdrop-filter: blur(5px);
+        background: rgba(255, 255, 255, 0.05);  
+        &_error {
+            background: rgba(255, 165, 165, 0.2);
+        } 
+    }
+    &_error {
+        background: $errorColor;
+        margin-bottom: 4px;
+    }
+    &__wrapper {
+margin-bottom: 25px;
+    }
+    & input {
+        width: inherit;
+        height: inherit;
+        background-color: transparent;
+        border: none;
+        padding: 24px;
+        &::-webkit-input-placeholder {
+            color: $text40Color;
+          }
+          &::-moz-placeholder {
+            color: $text40Color;
+          }
+          &:-moz-placeholder {
+            color: $text40Color;
+          }
+          &:-ms-input-placeholder {
+            color: $text40Color;
+          }
+          &:focus {
+            outline: none;
+          }
+    }
+}
+
+
